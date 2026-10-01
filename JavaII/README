@@ -1,0 +1,5 @@
+Zgjidhja
+-nav me 3 lidhje që çojnë te karta përkatëse
+-3 karta (article), secila me titull, ikonë SVG, përshkrim dhe "Historia e fshehur" (details/summary)
+-Kartat renditen krah për krah me CSS Grid
+-Kur klikohet një lidhje nga nav, karta zgjidhet dhe merr buzë jeshile (me :target)

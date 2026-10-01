@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 1rem;
+  color: #1f2a33;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+  top: auto;
+}
+.skip:focus {
+  position: static;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  margin: 0 0 0.25rem;
+  color: #4a5661;
+}
+
+header h1 {
+  margin: 0 0 0.75rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid #1f6f54;
+  margin-bottom: 1rem;
+}
+
+header nav a {
+  color: #1a56db;
+  text-decoration: underline;
+}
+
+.data-ekspozites {
+  margin: 0 0 1.25rem;
+}
+
+.kartat {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.karte {
+  background: #ffffff;
+  border: 1px solid #e3e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.karte:target {
+  border-color: #1f6f54;
+  box-shadow: 0 0 0 3px rgba(31, 111, 84, 0.35), 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.karte h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.karte figure {
+  margin: 0 0 0.75rem;
+  background: #eef1f4;
+  border-radius: 6px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.karte figure img {
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+}
+
+.karte p {
+  margin: 0 0 0.75rem;
+  color: #3a4550;
+}
+
+.karte details summary {
+  cursor: pointer;
+  color: #1f6f54;
+  font-weight: 600;
+}
+
+.karte details p {
+  margin-top: 0.5rem;
+  color: #4a5661;
+}
+
+footer {
+  margin-top: 2rem;
+  color: #6b7580;
+  font-size: 0.9rem;
+}

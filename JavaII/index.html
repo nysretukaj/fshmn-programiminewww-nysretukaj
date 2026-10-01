@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muzeu i sendeve të zakonshme</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Kalo te përmbajtja</a>
+    <header>
+      <p>Programimi në WWW · Pikënisja</p>
+      <h1>Muzeu i sendeve të zakonshme</h1>
+      <nav aria-label="Navigimi i eksponateve">
+        <a href="#celesi">Çelësi</a>
+        <a href="#filxhani">Filxhani</a>
+        <a href="#bileta">Bileta</a>
+      </nav>
+    </header>
+    <main id="main">
+      <p class="data-ekspozites">
+        Ekspozita: <time datetime="2026-10-01">1 tetor 2026</time>
+      </p>
+
+      <div class="kartat">
+        <article class="karte" id="celesi">
+          <h2>Çelësi</h2>
+          <figure>
+            <img src="celesi.svg" alt="Vizatim i një çelësi të vjetër" />
+          </figure>
+          <p>Hapja e një dere mund të jetë fillimi i një historie.</p>
+          <details>
+            <summary>Historia e fshehur</summary>
+            <p>
+              Ky çelës u gjet në sirtarin e një banese të braktisur. Askush
+              nuk e di saktësisht cilën derë hap, por forma e tij e vjetër
+              sugjeron se mbante një sekret të rëndësishëm për pronarin.
+            </p>
+          </details>
+        </article>
+
+        <article class="karte" id="filxhani">
+          <h2>Filxhani</h2>
+          <figure>
+            <img src="filxhani.svg" alt="Vizatim i një filxhani kafeje" />
+          </figure>
+          <p>Një filxhan mbledh kujtime nga bisedat.</p>
+          <details>
+            <summary>Historia e fshehur</summary>
+            <p>
+              Ky filxhan u përdor çdo mëngjes nga një mësuese fshati për
+              dekada. Nëpërmjet tij u shkëmbyen mijëra biseda, këshilla dhe
+              ide mes nxënësve dhe miqve.
+            </p>
+          </details>
+        </article>
+
+        <article class="karte" id="bileta">
+          <h2>Bileta</h2>
+          <figure>
+            <img src="bileta.svg" alt="Vizatim i një bilete udhëtimi" />
+          </figure>
+          <p>Një udhëtim i shkurtër, një kujtim i gjatë.</p>
+          <details>
+            <summary>Historia e fshehur</summary>
+            <p>
+              Kjo biletë u mbajt si kujtim nga udhëtimi i parë i një familjeje
+              jashtë qytetit të tyre. Ende sot ruhet si simbol i aventurës së
+              parë të përbashkët.
+            </p>
+          </details>
+        </article>
+      </div>
+    </main>
+    <footer>Shembull mësimor · Të dhëna të sajuara · Vetëm front end</footer>
+  </body>
+</html>

@@ -1,2 +1,11 @@
-# fshmn-programiminewww-nysretukaj
-Ky repository është dedikuar lëndës Programim në WWW, nën udhëheqjen e profesorit Korab Rrmoku dhe asistentit Dardan Shabani. Përmban ushtrime, detyra dhe materiale të zhvilluara gjatë semestrit, të strukturuara sipas javëve në foldera të emërtuar me numra romakë: I, II, III, IV, ...
+# Programimi në WWW: repository individual
+
+Detyrat javore të lëndës *Programimi në WWW* (FShMN). Çdo javë ka folderin e vet `JavaI` ... `JavaXIV`; folderët ende bosh mbahen me `.gitkeep`.
+
+| Java | Tema | Statusi |
+|---|---|---|
+| JavaI | | Në pritje |
+| [JavaII](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/JavaII) | Muzeu i sendeve | Dorëzuar |
+| JavaIII – JavaXIV | | Në pritje |
+
+Udhëzimet për hapjen e çdo detyre janë në `README.md`-në e folderit përkatës.

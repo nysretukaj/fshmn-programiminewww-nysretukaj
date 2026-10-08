@@ -1,0 +1,28 @@
+/*
+  DIAGNOZA (para riparimit):
+  1) Konflikt specifike: #poster (ID, specifikë 1-0-0) fiton gjithmonë
+     mbi .poster (klasë, 0-1-0), pavarësisht se .poster vjen më poshtë
+     në skedar. Kështu "color: white" nga #poster mbizotëronte
+     "color: #17263c" nga .poster → tekst i bardhë mbi sfond të bardhë,
+     i palexueshëm.
+  2) Overflow gjerësie: për të njëjtën arsye, "width: 700px" (fiks) nga
+     #poster mbizotëronte "width: 100%" nga .poster. Një gjerësi fikse
+     700px nuk hyn në ekran 360px. Padding: 80px e rëndonte edhe më
+     shumë, sepse pa box-sizing: border-box padding-u shtohet mbi
+     width (700px + 160px padding = 860px total).
+
+  RIPARIMI (pa !important):
+  Hiqet selektori ID që krijonte konfliktin; mbahet vetëm klasa e
+  ripërdorshme .poster, me color të lexueshëm, gjerësi fleksibile
+  (max-width + 100%) dhe box-sizing: border-box (i trashëguar nga
+  * { box-sizing: border-box; } në style.css) që padding-u të mos
+  dalë jashtë kutisë.
+*/
+
+.poster {
+  color: #17263c;
+  background: #ffffff;
+  max-width: 700px;
+  width: 100%;
+  padding: 2.5rem;
+}

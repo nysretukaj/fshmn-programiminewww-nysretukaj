@@ -14,7 +14,7 @@ Kjo faqe në GitHub Pages shërben për t'i parë dhe hapur lehtësisht detyrat 
 |---|---|---|
 | [JavaI](.[/JavaI/](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/JavaI)) | Pasaporta digjitale dhe GitHub | Dorëzuar |
 | [JavaII]([./JavaII/](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/JavaII)) | Muzeu i sendeve | Dorëzuar |
-| [JavaIII][[./JavaIII](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/JavaIII)) | Klubi i debatit | Dorëzuar |
+| [JavaIII]([./JavaIII](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/JavaIII)) | Klubi i debatit | Dorëzuar |
 | [Detyra]([./Projekti1/](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/Projekti1)) | Klubi Shkencor | Vlerësuar · 6/6 |
-| [JavaIV]([./JavaIV/)](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/JavaIV) | Festivali që përshtatet në çdo ekran | Dorezuar |
+| [JavaIV]([./JavaIV/](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/JavaIV)) | Festivali që përshtatet në çdo ekran | Dorezuar |
 | JavaV – JavaXIV | | Në pritje |

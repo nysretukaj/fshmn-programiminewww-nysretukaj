@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulari i misionit sekret</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Kalo te përmbajtja</a>
+    <header>
+      <p>Programimi në WWW · Pikënisja</p>
+      <h1>Regjistro misionin</h1>
+    </header>
+    <main id="main">
+      <p class="demo-note">
+        Demonstrim lokal: përdor vetëm të dhëna të sajuara. Nuk kryhet regjistrim real.
+      </p>
+
+      <form action="pranuar.html" method="get" novalidate>
+        <div class="field">
+          <label for="pseudonimi">Pseudonimi (3–20 karaktere)</label>
+          <input
+            type="text"
+            id="pseudonimi"
+            name="pseudonimi"
+            required
+            minlength="3"
+            maxlength="20"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="field">
+          <label for="email">Email i sajuar</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="student@example.org"
+          />
+        </div>
+
+        <div class="field">
+          <label for="persona">Persona (1–5)</label>
+          <input
+            type="number"
+            id="persona"
+            name="persona"
+            required
+            min="1"
+            max="5"
+            step="1"
+          />
+        </div>
+
+        <fieldset class="field">
+          <legend>Kategoria</legend>
+          <div class="radio-option">
+            <input type="radio" id="kat-art" name="kategoria" value="Art" required />
+            <label for="kat-art">Art</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="kat-shkence" name="kategoria" value="Shkencë" />
+            <label for="kat-shkence">Shkencë</label>
+          </div>
+        </fieldset>
+
+        <div class="field checkbox-field">
+          <input type="checkbox" id="rregullat" name="rregullat" value="po" required />
+          <label for="rregullat">I pranoj rregullat e demonstrimit</label>
+        </div>
+
+        <button type="submit">Kontrollo formularin</button>
+      </form>
+
+      <h2 class="table-title">Oraret e misioneve</h2>
+      <table>
+        <caption>Orari i misioneve të hapura sot</caption>
+        <thead>
+          <tr>
+            <th scope="col">Ora</th>
+            <th scope="col">Misioni</th>
+            <th scope="col">Vendi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">10:00</th>
+            <td>Gjej shenjën</td>
+            <td>Oborri</td>
+          </tr>
+          <tr>
+            <th scope="row">12:00</th>
+            <td>Lexo hartën</td>
+            <td>Biblioteka</td>
+          </tr>
+          <tr>
+            <th scope="row">14:00</th>
+            <td>Zbulo objektin</td>
+            <td>Laboratori</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>Shembull mësimor · Të dhëna të sajuara · Vetëm front end</footer>
+  </body>
+</html>

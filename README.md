@@ -17,4 +17,5 @@ Kjo faqe në GitHub Pages shërben për t'i parë dhe hapur lehtësisht detyrat 
 | [JavaIII]([./JavaIII](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/JavaIII)) | Klubi i debatit | Dorëzuar |
 | [Detyra]([./Projekti1/](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/Projekti1)) | Klubi Shkencor | Vlerësuar |
 | [JavaIV]([./JavaIV/](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/JavaIV)) | Festivali që përshtatet në çdo ekran | Dorezuar |
-| JavaV – JavaXIV | | Në pritje |
+| [JavaV]([./JavaV/](https://github.com/nysretukaj/fshmn-programiminewww-nysretukaj/tree/main/JavaV)) | Formulari i misionit sekret | Dorezuar
+| JavaVI – JavaXIV | | Në pritje |

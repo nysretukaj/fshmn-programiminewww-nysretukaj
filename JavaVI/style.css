@@ -1,0 +1,43 @@
+/* Shkruaj stilin tënd. */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  margin: 1rem;
+  max-width: 32rem;
+}
+#forma {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+#forma label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-weight: 600;
+}
+#forma input {
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+#forma button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#rezultati {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+#rezultati.ok {
+  color: #0a7d2c;
+}
+#rezultati.jo-ok {
+  color: #b00020;
+}
+#rezultati.gabim {
+  color: #b00020;
+}

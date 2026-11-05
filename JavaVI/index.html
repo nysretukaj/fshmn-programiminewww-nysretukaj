@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Planifiko një pasdite me 20 euro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Kalo te përmbajtja</a>
+    <header>
+      <p>Programimi në WWW · Pikënisja</p>
+      <h1>Planifiko një pasdite me 20 euro</h1>
+    </header>
+    <main id="main">
+      <h2>Llogarit buxhetin</h2>
+      <form id="forma">
+        <label>
+          Çmimi për person (€)
+          <input type="number" id="cmimi" step="0.01" min="0" value="4" required />
+        </label>
+        <label>
+          Numri i personave (1–5)
+          <input type="number" id="persona" step="1" min="1" max="5" value="5" required />
+        </label>
+        <label>
+          Buxheti total (€)
+          <input type="number" id="buxheti" step="0.01" min="0" value="20" required />
+        </label>
+        <button type="submit">Llogarit</button>
+      </form>
+      <p id="rezultati" role="status" aria-live="polite"></p>
+    </main>
+    <footer>Shembull mësimor · Të dhëna të sajuara · Vetëm front end</footer>
+    <script type="module">
+      import { llogarit } from "./logjika.js";
+
+      const forma = document.getElementById("forma");
+      const rezultati = document.getElementById("rezultati");
+
+      forma.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const cmimi = Number(document.getElementById("cmimi").value);
+        const persona = Number(document.getElementById("persona").value);
+        const buxheti = Number(document.getElementById("buxheti").value);
+
+        const rez = llogarit(cmimi, persona, buxheti);
+
+        if (!rez.ok) {
+          rezultati.textContent = `Gabim: ${rez.error}`;
+          rezultati.className = "gabim";
+          return;
+        }
+
+        const statusi = rez.brenda ? "✅ Brenda buxhetit" : "❌ E tejkalon buxhetin";
+        rezultati.textContent =
+          `${statusi} — Totali: ${rez.total.toFixed(2)}€, ` +
+          `Mbetja: ${rez.mbetja.toFixed(2)}€`;
+        rezultati.className = rez.brenda ? "ok" : "jo-ok";
+      });
+    </script>
+  </body>
+</html>
